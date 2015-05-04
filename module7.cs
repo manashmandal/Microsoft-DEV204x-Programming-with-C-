@@ -58,8 +58,6 @@ namespace DevXCSharp
         public static int studentCount = 0;
         private float Grade;
         private string studentID;
-        
-        //Grade Stack 
         private Stack<float> gradeStack = new Stack<float>();
 
         public void takeTest(string subject)
@@ -144,7 +142,18 @@ namespace DevXCSharp
             foreach(Student studs in this.courseStudents){
                 x++;
                 Student tempStudent = (Student) studs;
-                Console.WriteLine("{0} Student", x);
+                switch (x)
+                {
+                    case 1:
+                        Console.WriteLine("{0}st Student", x);
+                        break;
+                    case 2:
+                        Console.WriteLine("{0}nd Student", x);
+                        break;
+                    case 3:
+                        Console.WriteLine("{0}rd Student", x);
+                        break;
+                }
                 Console.WriteLine("First Name: {0}", tempStudent.FirstName);
                 Console.WriteLine("Last Name: {0}\n", tempStudent.LastName);
             }
