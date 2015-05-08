@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +15,31 @@ using System.Windows.Shapes;
 
 namespace Mod_9_Homework
 {
+
+    public class Student
+    {
+        private string firstName;
+        private string lastName;
+        private string city;
+
+        public string FirstName
+        {
+            get { return firstName; }
+            set { this.firstName = value; }
+        }
+
+        public string LastName
+        {
+            get { return lastName; }
+            set { this.lastName = value; }
+        }
+
+        public string City
+        {
+            get { return city; }
+            set { this.city = value; }
+        }
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
