@@ -47,7 +47,7 @@ namespace Mod_9_Homework
     {
         static int iteration = -1;
         //Creating List of Students
-        private List<Student> studentCollections = new List<Student>();
+        private List<Student> studentCollections;
         
         //Adding Student to the collection
         void add(string first, string last, string city)
@@ -104,6 +104,7 @@ namespace Mod_9_Homework
         public MainWindow()
         {
             InitializeComponent();
+            studentCollections = new List<Student>();
         }
 
         private void btnCreateStudent_Click(object sender, RoutedEventArgs e)
